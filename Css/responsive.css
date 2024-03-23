@@ -118,5 +118,11 @@
         width: 3rem;
         padding: .7rem;
     }
+
+    .github a{
+        font-size: 1rem;
+        width: 3rem;
+        padding: .7rem;
+    }
     
 }
