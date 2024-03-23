@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Style+Script&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,.main {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+.auto-typed{
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+header {
+    position: sticky;
+    backdrop-filter: blur(4px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(4px); /* For Safari */
+    top: 0;
+    width: 100%;
+    /* background-color: #198745; */
+    border-bottom: 1px solid black;
+    /* height: 75px; */
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding: .3rem;
+    height: 5rem;
+    /* gap: 5px; */
+    /* transition: all 1s linear; */
+    overflow: hidden;
+
+}
+
+.logo {
+    margin-right: 1rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.logo span {
+    font-family: "Style Script", cursive;
+    transition: margin .5s linear;
+}
+
+.logo span:hover {
+    margin: .5rem;
+}
+
+nav {
+    /* background-color: yellow; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 1rem; */
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.list-items {
+    text-transform: capitalize;
+    margin-right: 1rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+
+.list-link {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.list-link::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2%;
+    width: 10%;
+    top: 100%;
+    left: 0;
+    transition: all 1s linear;
+}
+
+.list-link:hover::before {
+    width: 100%;
+}
+
+
+.header-right {
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: .3rem;
+    height: 100%;
+    /* padding-right: 1rem; */
+
+}
+
+.header-right input {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: .1rem;
+    font-size: 1rem;
+}
+
+.header-right button {
+    padding: .2rem .4rem;
+    background-color: transparent;
+    border: 1px solid #198745;
+    color: #198745;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+.header-right button:hover {
+    background-color: #198745;
+    color: white;
+}
+
+.bars {
+    display: none;
+    /* border: 1px solid black; */
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cross {
+
+    display: none;
+
+    /* border: 1px solid black; */
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+.hero {
+    /* border: 1px solid black; */
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    /* transition: all 1s linear; */
+    gap: 1rem;
+    /* background-color: #198745; */
+
+
+}
+
+.hero h1 {
+    font-size: 3rem;
+    /* margin: 1rem; */
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid black; */
+    /* font-family: "Style Script", cursive; */
+
+}
+.hero h1 span {
+    font-family: "IBM Plex Sans Condensed", sans-serif;   
+}
+.hero h1 .auto-typed{
+    font-family: "Style Script", cursive;
+}
+
+.hero p strong{
+    font-family: "Style Script", cursive;
+}
+
+
+.hero p {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    /*  */
+}
+
+.connects {
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    /* text-align: center; */
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+
+/* 
+.linkedin{
+    /* border: 1px solid black;} */
+
+
+.linkedin a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+   
+    width: 5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: border 0.5s linear, background-color 0.5s linear , color 0.2s linear;
+}
+
+.linkedin a:hover{
+    border: none;
+    background-color: #0D6EFD;
+    color: white;
+}
+
+
+.arrow {
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    padding: .5rem;
+    transform: rotate(-40deg);
+    transition: all .3s linear;
+}
+
+.arrow:hover {
+    transform: rotate(0deg);
+    margin-right: .4rem;
+}
+
+
+
+
+
+
+.instagram a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background: transparent;
+    width: 5rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: border 0.5s linear, background 0.5s linear , color 0.3s linear;
+}
+
+.instagram a:hover {
+    border: none;
+    color: white;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #a818a8, #8a18b6, #662d91, #3a5a8d);
+}
+
+
+
+
+
+
+.weather-app{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* background-color: #198745; */
+    border-top: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.weather-app h1{
+    width: 100%;
+    text-align: center;
+}
+/* 
+#card-1{
+    background-color: #198745;
+    color: white;
+} */
+
+
+.weather-main{
+    justify-content: center;
+    gap: 1rem;
+    width: 98%;
+    /* border: 1px solid black; */
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+
+
+
