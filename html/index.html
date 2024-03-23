@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="/Css/responsive.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <header>
+
+            <nav>
+                <h1 class="logo"><span>Syed</span> Kaif</h1>
+                <ul class="list display">
+                    <li class="list-items"><a href="#home" class="list-link">home</a></li>
+                    <li class="list-items"><a href="#aboutme" class="list-link">about me</a></li>
+                    <li class="list-items"><a href="#contact" class="list-link">contact</a></li>
+                    <li class="list-items"><a href="#howtouse" class="list-link">how to use</a></li>
+                </ul>
+            </nav>
+            <form action="" class="header-right" onsubmit="return formSubmit();">
+                <input type="text" placeholder="Enter city name">
+                <button type="submit" id="scrollButton">Search</button>
+            </form>
+
+
+
+            <i class="fa-solid fa-bars  bars "></i>
+            <i class="fa-solid fa-xmark cross "></i>
+
+
+        </header>
+
+
+        <section class="hero">
+            <h1><span>Code By</span> <span class="auto-typed"></span></h1>
+            <p>Hello, esteemed colleagues. My name is <strong>Syed Kaif</strong>, and I am a Computer Engineering
+                Student from Jamia Millia Islamia. I take great pride in informing you that I have designed a weather
+                forecasting website utilizing Rapid API</p>
+            <div class="connects">
+                <div class="linkedin"> <a href="https://www.linkedin.com/in/mohd-kaif-/" target="_blank"
+                        class="fa-brands fa-linkedin"></a></div>
+                <div class="instagram"><a href="https://www.instagram.com/syedkaif___/" target="_blank"
+                        class="fa-brands fa-instagram"></a></div>
+
+
+            </div>
+        </section>
+
+
+        <section class="weather-app">
+
+
+            <h1>Weather of <span></span></h1>
+            <div class="weather-main">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal" id="targetSection">Temperature info</h4>
+                            </div>
+
+                            <div class="card-body" id="card-1">
+                                <h1 class="card-title pricing-card-title"><span></span><small
+                                        class="text-body-secondary fw-light">°C</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Temperature : <span></span>°C</li>
+                                    <li>Max Temperature : <span></span>°C </li>
+                                    <li>Min Temperature : <span></span>°C </li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Wind Info</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title"><span></span><small
+                                        class="text-body-secondary fw-light">Km/hr</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Wind Speed : <span></span>Km/hr</li>
+
+                                    <li>Wind Direction (in Degrees) : <br><span></span>°C </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Humidity and Sun info</h4>
+                            </div>
+
+                            <div class="card-body" id="card-1">
+                                <h1 class="card-title pricing-card-title"><span></span><small
+                                        class="text-body-secondary fw-light">%</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Humidity : <span></span>%</li>
+                                    <li>Sunrise : <span></span> </li>
+                                    <li>Sunset : <span></span> </li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="/javascript/web-javascript.js"></script>
+    <script src="/javascript/app-javascript.js"></script>
+    <!-- bootstrap java script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-typed", {
+            strings: ["Syed Kaif", "Front-end-Developer","Syed Kaif"],
+            typeSpeed: 100,
+            backSpeed: 100, // Corrected spelling from "backSpedd" to "backSpeed"
+            looped: true
+        });
+
+    </script>
+</body>
+
+</html>
